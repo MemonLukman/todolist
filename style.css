@@ -1,0 +1,104 @@
+body {
+    background-color: #344955;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.intro {
+    margin: 30px 0px;
+    font-weight: bold;
+}
+
+h1 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+p {
+    font-weight: 600;
+}
+
+#first {
+    color: #F9AA33;
+    margin-top: 10px;
+}
+
+#second {
+    color: limegreen;
+    margin-top: 10px;
+}
+
+#third {
+    color: lightgray;
+    margin-top: 10px;
+}
+
+#userInput {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 10px;
+    height: 25px;
+}
+
+#enter {
+    border: none;
+    padding: 9px 15px;
+    border-radius: 5px;
+    transition: all 0.75s ease;
+}
+
+#enter:hover {
+    background-color: darkgray;
+}
+
+ul {
+    text-align: left;
+    margin-top: 20px;
+}
+
+li {
+    list-style: none;
+    padding: 10px 20px;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-weight: 600;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background: gray;
+    transition: all 0.75s ease;
+}
+
+li:hover {
+    background: lightgray;
+}
+
+li > button {
+    font-weight: normal;
+    background: none;
+    border: none;
+    float: right;
+    color: black;
+    font-weight: 800;
+}
+
+input {
+    border-radius: 5px;
+    min-width: 50%;
+    padding: 5px;
+    border: none;
+}
+
+.done {
+    background: limegreen !important;
+	color: #00891E;
+}
+
+.delete {
+    display: none;
+}
+
+
+
