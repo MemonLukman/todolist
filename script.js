@@ -16,7 +16,7 @@ function createListElement() {
 
     li.appendChild(document.createTextNode(input.value)); //makes text from input field the li text
     ul.appendChild(li); //adds li to ul
-    input.value = ""; // reset input field
+    input.value = ""; //reset input field
 
     //Start strikethrough
     function crossOut() {
@@ -51,9 +51,9 @@ function addListAfterKeyPress(event) {
     }
 }
 
-enterButton.addEventListener("click", addListAfterClick);
+//enterButton.addEventListener("click", addListAfterClick);
 
-input.addEventListener("keypress", addListAfterKeyPress);
+input.addEventListener("keypress", addListAfterKeyPress());
 
 
 
