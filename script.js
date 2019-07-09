@@ -7,16 +7,15 @@ function inputLength() {
     return input.value.length;
 }
 
-function listLength() {
-    return item.length;
-}
-
 function createListElement() {
+    if(inputLength == 0){
+        return false;
+    }
     var li = document.createElement("li");
 
     li.appendChild(document.createTextNode(input.value)); //makes text from input field the li text
     ul.appendChild(li); //adds li to ul
-    input.value = ""; // reset input field
+    input.value = ""; //reset input field
 
     //Start strikethrough
     function crossOut() {
@@ -35,25 +34,24 @@ function createListElement() {
 
     function deleteListItem() {
         li.classList.add("delete");
-    }
+    }   
 }
 
-function addListAfterClick() {
-    if(inputLength > 0) {
+
+enterButton.onclick = function() {
+    if(input.value.trim() != "") {
+        createListElement();
+    }
+}
+    
+input.onkeypress = function(event) {
+    if (event.keyCode == 13 && input.value.trim() != "") {
         createListElement();
     }
 }
 
-function addListAfterKeyPress(event) {
-    if(inputLength > 0 && event.which == 13) { 
-    //13 is the enter key's keycode
-        createListElement();
-    }
-}
 
-enterButton.addEventListener("click", addListAfterClick);
 
-input.addEventListener("keypress", addListAfterKeyPress);
 
 
 
